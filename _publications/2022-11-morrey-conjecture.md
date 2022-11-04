@@ -1,7 +1,7 @@
 ---
 title: "Some Numerical Simulations in favor of the Morrey's Conjecture"
 collection: publications
-permalink: /publication/2022-morrey-conjecture
+permalink: /publication/2022-11-morrey-conjecture
 date: 2022-11-01
 venue: 'ResearchGate:Preprint'
 paperurl: '/files/pdf/research/morrey.pdf'
