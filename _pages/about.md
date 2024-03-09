@@ -2,11 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Moto. Etc.
+subtitle: |+
+  <strong>Researcher</strong> at <a href="https://openai.com/">OpenAI</a>, Strategic Explorations team. <br><br>
+  (Incoming) <strong>Assistant Professor</strong>, <br>
+  Electrical Engineering and Computing + Mathematical Sciences, <br>
+  <a href="https://www.caltech.edu">California Institute of Technology (Caltech)</a>.
 
 profile:
-  align: right
-  image: prof_pic.jpg
+  align: left
+  image: profile.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>555 your office number</p>
