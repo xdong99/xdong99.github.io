@@ -9,6 +9,7 @@ subtitle: |+
   <strong>Pawfessor</strong> at the University of Wisconsin-Meowdison. <br>
   <div style="margin-top: 8px;"></div> 
   <strong>Appawlied Meowthemeowtician, Fishysicist</strong>.
+  <div style="margin-top: 8px;"></div> 
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
