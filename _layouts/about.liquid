@@ -5,38 +5,23 @@ layout: default
   <article>
     {% if page.profile -%}
     <div class="row">        
-      <div class="col-xs-1 col-sm-3">
-        {%- if page.profile.image %}
-          {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+      <div class="profile col-sm-3 ">
 
-          {% if page.profile.image_cicular %}
-            {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-          {% else %}
-            {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+          {% if page.profile.image %}
+            <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
           {% endif %}
 
-          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 300 | times: 0.1}}px, (min-width: 176px)
-          10vw, 45vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+      </div>
 
-        {% endif -%}
-      </div>                                   
       <div class="col-sm-9">          
-        <h1 class="post-title">
-          {% if site.title == "blank" -%}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }} {%- else -%}{{ site.title }}{%- endif %} (董星浩)
+        <h1 class="post-title" style="font-size:30px">
+            {% if site.title == "blank" %}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{% else %}{{ site.title }}{% endif %}（董星浩）
         </h1>
-        <p class="desc">{{ page.subtitle }}</p>  
-        {%- if page.profile.address %}
-        <div class="address">
-          {{ page.profile.address }}              
-        </div>
-        {%- endif %}            
+        <p class="desc">{{ page.subtitle }}</p>               
       </div>                      
     </div>
     {%- endif %}
+
     <hr>
 
     <div class="clearfix">{{ content }}</div>
