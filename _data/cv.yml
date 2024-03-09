@@ -1,17 +1,17 @@
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D. in Computer Science
-      institution: Stanford University, California, United States
-      year: 2022
+    - title: Ph.D. Student in Mechanical Engineering & Mathematics
+      institution: University of Wisconsin-Madison, Madison, Wisconsin
+      year: Expected 2028
       description:
-        - Advised by <a href="https://cs.stanford.edu/~ermon">Stefano Ermon</a>.
-    - title: B.S. in Mathematics and Physics
-      institution: Tsinghua University, Beijing, China
-      year: 2016
+        - Advised by <a href="https://directory.engr.wisc.edu/me/Faculty/Wu_Jinlong/">Jinlong Wu</a>.
+        - <a href="https://www.jinlongwu.org/">Artificial Intelligence for Modeling and Simulation (AIMS) Lab </a>.
+    - title: B.S. in Applied Mathematics with Specialization in Computing
+      institution: University of California, Los Angeles (UCLA), Los Angeles, California
+      year: 2023
       description:
-        - <em> Magna cum laude.</em>
-        - Academic Talent Program 2012.
+        - <em> Cum laude.</em>
 
 - title: Experience
   type: time_table
