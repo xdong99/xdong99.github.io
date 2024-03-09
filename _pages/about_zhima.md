@@ -1,0 +1,1 @@
+I am a Chinese Li Hua cat (a.k.a 狸花猫), born in June 18th, 2023. I was adopted when I was three months old, and since then, I have became a `Pawfessor of Appawlied Meowthemeowtics and Fishysics` (although I do not like fish) at the `University of Wisconsin-Meowdison`.
