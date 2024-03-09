@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: |+
-  <strong>PhD Student</strong> at <a href="https://www.wisc.edu/">University of Wisconsin-Madison</a>. <br>
+  <strong>PhD Student</strong> at <a href="https://www.wisc.edu/">the University of Wisconsin-Madison</a>. <br>
   <strong>Researcher</strong> of the <a href="https://www.jinlongwu.org/"> Artificial Intelligence for Modeling and Simulation Lab</a>.
 
   <div style="margin-top: 8px;"></div> 
