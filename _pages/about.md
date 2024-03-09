@@ -4,13 +4,15 @@ title: about
 permalink: /
 subtitle: |+
   <strong>PhD Student</strong> at <a href="https://www.wisc.edu/">University of Wisconsin-Madison</a>. <br>
-  <strong>Researcher</strong> of the <a href="https://www.jinlongwu.org/"> Artificial Intelligence for Modeling and Simulation Lab</a>.<br><br>
+  <strong>Researcher</strong> of the <a href="https://www.jinlongwu.org/"> Artificial Intelligence for Modeling and Simulation Lab</a>.
+
+  <div style="margin-top: 8px;"></div> 
 
   <strong>Bachelor of Science</strong>, <br>
   Applied Mathematics + Specialization in Computing, <br>
   <a href="https://www.ucla.edu/">University of California, Los Angeles</a>.
 
-  <div style="margin-top: 10px;"></div> 
+  <div style="margin-top: 8px;"></div> 
 
   <span style="font-family: 'Brush Script MT', cursive; font-size: larger;">The creative principle resides in mathematics. - Albert Einstein</span>
 
