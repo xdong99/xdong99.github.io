@@ -3,7 +3,10 @@
   contents:
     - title: Ph.D. Student in Mechanical Engineering & Mathematics
       institution: University of Wisconsin-Madison, Madison, Wisconsin
-      year: Expected 2028
+      year: |+
+        Expected 
+        <div style="margin-top: 8px;"></div>
+        2028
       description:
         - Advised by <a href="https://directory.engr.wisc.edu/me/Faculty/Wu_Jinlong/">Jinlong Wu</a>.
         - <a href="https://www.jinlongwu.org/">Artificial Intelligence for Modeling and Simulation (AIMS) Lab </a>.
@@ -13,71 +16,65 @@
       description:
         - <em> Cum laude.</em>
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Research Intern
-      institution: Google Brain, Google LLC, Mountain View, California
-      year: Summer 2020
+    - title: Research Assistant
+      institution: Department of Mechanical Engineering, UW-Madison, Madison, Wisconsin
+      year: |+
+        09/2023
+        <div style="margin-top: 8px;"></div> 
+        - Present
       description:
-        - Hosted by Ben Poole, Jascha Sohl-Dickstein, Diederik P. Kingma, and Abhishek Kumar.
-    - title: Engineering Intern
-      institution: Advanced Technologies Group, Uber, Toronto, Canada
-      year: Summer 2018
+        - Refining diffusion models to accurately model and predict complex stochastic systems, emphasizing their mathematical underpinnings.
+    - title: Research Assistant
+      institution: Department of Mathematics, UCLA, Los Angeles, California
+      year: |+
+        06/2022
+        <div style="margin-top: 8px;"></div> 
+        - 03/2023
       description:
-        - Hosted by Raquel Urtasun, Chief Scientist of Uber.
+        - Investigated an optimization problem related to the Morrey conjecture that rank-one convexity does not imply quasi-convexity.
+        - First successful numerical strategy to prove the Morrey Conjecture by finding example functions.
 
-    - title: Research Intern
-      institution: Microsoft Research, Cambridge, UK.
-      year: Summer 2017
+    - title: Research Assistant
+      institution: Department of Ecology and Evolutionary Biology, UCLA, Los Angeles, California
+      year: |+
+        02/2022
+        <div style="margin-top: 8px;"></div> 
+        - 06/2022
       description:
-        - Hosted by Nate Kushman.
+        - Constructed a mechanistic simulation-based model and a boosted regression tree model to predict tick population abundance.
 
 - title: Honors and Awards
   type: time_table
   contents:
     - year: 2023
       items:
-        - Meritorious Winner of the 2023 WAIC Yunfan Award.
-    - year: 2021
-      items: 
-        - <a href="https://iclr-conf.medium.com/announcing-iclr-2021-outstanding-paper-awards-9ae0514734ab">ICLR Outstanding Paper Award</a>
-        - NeurIPS Outstanding Reviewer Award
-        - <a href="https://mp.weixin.qq.com/s/FQqzM3MXFlGGo4ct5kxERg">WAIC Rising Star Award</a>
-    - year: 2020
-      items: 
-        - <a href="https://www.apple.com/education/higher-education/scholars/">Apple PhD Fellowship in AI/ML</a>
-        - <a href="https://www.jpmorgan.com/global/technology/ai/awards/phd-fellowship-award-recipients-2020">J.P. Morgan PhD Fellowship</a>
-        - <a href="https://research.facebook.com/blog/2020/01/announcing-the-recipients-of-the-2020-facebook-fellowship-awards/">Facebook Fellowship, Finalist</a>
-    - year: 2016
-      items:
-        - Stanford School of Engineering Fellowship
-        - Excellent Graduate, Tsinghua University
-        - Qualcomm Fellowship
-        - Microsoft-IEEE Fellowship
+        - UW-Madison Allman Fellowship
 
 - title: Teaching
   type: time_table
   contents:
-    - title: Co-Instructor
+    - title: Grader
       institution: >
-        <a href="https://deepgenerativemodels.github.io/">CS236: Deep Generative Models</a>, Stanford University
-      year: Fall 2021
+        PIC-20A: Principles of Java Language with Applications, UCLA
+      year: Winter 2022
       
-    - title: Teaching Assistant
+    - title: Learning Assistant
       institution: >
-        <a href="https://deepgenerativemodels.github.io/2019/">CS236: Deep Generative Models</a>, Stanford University
-      year: Fall 2019
-      
-    - title: Head Teaching Assistant
-      institution: >
-        <a href="https://deepgenerativemodels.github.io/2018/">CS236: Deep Generative Models</a>, Stanford University
-      year: Fall 2018
+        CS 31: Introduction to Computer Science I, UCLA
+      year: Spring 2022
 
-- title: Professional Services
-  type: list
-  contents:    
-    - <strong>Organizer:</strong> <a href="https://score-based-methods-workshop.github.io/">NeurIPS 2022 Workshop on Score-Based Methods</a>.
-    - <strong>Area Chair:</strong> CVPR (2023), NeurIPS (2023).
-    - <strong>Journal Reviewer:</strong> JRSS-B, JMLR, TMLR, IEEE TPAMI, ACM TKDD, Medical Image Analysis, IEEE TIFS, IEEE TNNLS, IEEE TDSC, IET CV.
-    - <strong>Conference Reviewer/ Program Committee:</strong> NeurIPS (2019-2022, 2016), ICML (2019-2023), ICLR (2019-2023), AISTATS (2020-2022), UAI (2020-2023), AAAI (2020).
+    - title: Learning Assistant
+      institution: >
+        Math 32B: Calculus of Several Variables, UCLA
+      year: Winter 2022
+
+# - title: Professional Services
+#   type: list
+#   contents:    
+#     - <strong>Organizer:</strong> <a href="https://score-based-methods-workshop.github.io/">NeurIPS 2022 Workshop on Score-Based Methods</a>.
+#     - <strong>Area Chair:</strong> CVPR (2023), NeurIPS (2023).
+#     - <strong>Journal Reviewer:</strong> JRSS-B, JMLR, TMLR, IEEE TPAMI, ACM TKDD, Medical Image Analysis, IEEE TIFS, IEEE TNNLS, IEEE TDSC, IET CV.
+#     - <strong>Conference Reviewer/ Program Committee:</strong> NeurIPS (2019-2022, 2016), ICML (2019-2023), ICLR (2019-2023), AISTATS (2020-2022), UAI (2020-2023), AAAI (2020).
