@@ -3,10 +3,16 @@ layout: about
 title: about
 permalink: /
 subtitle: |+
-  <strong>Researcher</strong> at <a href="https://openai.com/">OpenAI</a>, Strategic Explorations team. <br><br>
-  (Incoming) <strong>Assistant Professor</strong>, <br>
-  Electrical Engineering and Computing + Mathematical Sciences, <br>
-  <a href="https://www.caltech.edu">California Institute of Technology (Caltech)</a>.
+  <strong>PhD Student</strong> at <a href="https://www.wisc.edu/">University of Wisconsin-Madison</a>. <br>
+  <strong>AI Researcher</strong> of the <a href="https://www.jinlongwu.org/"> Artificial Intelligence for Modeling and Simulation Lab</a>.<br><br>
+
+  <strong>Bachelor of Science</strong>, <br>
+  Applied Mathematics + Specialization in Computing, <br>
+  <a href="https://www.ucla.edu/">University of California, Los Angeles</a>.
+
+  <div style="margin-top: 10px;"></div> 
+
+  <span style="font-family: 'Brush Script MT', cursive; font-size: larger;">The creative principle resides in mathematics. - Albert Einstein</span>
 
 profile:
   align: left
