@@ -28,9 +28,6 @@ news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
+**Research:** My goal is to make foundational advancements in the theory, methods, and algorithms of generative AI and SciML. My current research focuses on (score-based) diffusion models with applications in complex dynamical systems that are multi-scale, multi-physics, and chaotic in nature. Additionally, my work extends to significant involvement and broad interests in data-driven modeling, computational fluid dynamics, and optimization.
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+**Previously:** I obtained my Bachelor's degree in Applied Mathematics and Computing from [University of California, Los Angeles (UCLA)](https://www.ucla.edu/), where I worked on proving the [Morrey's Conjecture](https://www.ias.edu/video/morreys-conjecture) by providing several [numerical examples](https://arxiv.org/abs/2211.11194).
