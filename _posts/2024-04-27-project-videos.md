@@ -3,8 +3,8 @@ layout: post
 title: Simulation Videos of the Surrogate Models
 date: 2024-04-27 15:01:00
 description: Videos for the Continuous and Stochastic Surrogate Modeling Report
-tags: Research Videos
-categories: Research-Blogs
+tags: research math generative code videos diffusion
+categories: Generative-Models
 ---
 
 Here I am incluing some animations related to my Continuous and Stochastic Surrogate Modeling project. The first video is to illustrate the significance of the modeled term G.
