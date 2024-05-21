@@ -20,9 +20,9 @@ Here I am incluing some animations related to my Continuous and Stochastic Surro
 </div>
 <div class="row mt-3">
     <div class="col-12 mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/Animation3040Final.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+        {% include video.liquid path="assets/video/Animation3050Final.mp4" class="img-fluid rounded z-depth-1" controls=true %}
         <div class="caption">
-            Animations of the true vorticity field and simulated vorticity field from 30s to 40s. <br>
+            Animations of the true vorticity field and simulated vorticity field from 30s to 50s. <br>
             Left: true vorticity. Right: simulated vorticity.
         </div>
     </div>
