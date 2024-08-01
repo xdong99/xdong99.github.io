@@ -19,7 +19,7 @@ and Neural Operator project.
     </div>
 </div>
 
-[//]: # (<div class="row mt-3">)
+<!-- [//]: # (<div class="row mt-3">)
 
 [//]: # (    <div class="col-12 mt-3 mt-md-0">)
 
@@ -35,5 +35,5 @@ and Neural Operator project.
 
 [//]: # (    </div>)
 
-[//]: # (</div>)
+[//]: # (</div>) -->
 
