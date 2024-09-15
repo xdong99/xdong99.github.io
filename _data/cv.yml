@@ -1,7 +1,7 @@
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D. Student in Mechanical Engineering & Mathematics
+    - title: Ph.D. Candidate in Mechanical Engineering & Mathematics
       institution: University of Wisconsin-Madison, Madison, Wisconsin
       year: |+
         Expected 
@@ -10,6 +10,12 @@
       description:
         - Advised by <a href="https://directory.engr.wisc.edu/me/Faculty/Wu_Jinlong/">Jinlong Wu</a>.
         - <a href="https://www.jinlongwu.org/">Artificial Intelligence for Modeling and Simulation (AIMS) Lab </a>.
+    - title: M.S. in Computer Science
+      institution: University of Wisconsin-Madison, Madison, Wisconsin
+      year: |+
+        Expected 
+        <div style="margin-top: 8px;"></div>
+        2026
     - title: B.S. in Applied Mathematics with Specialization in Computing
       institution: University of California, Los Angeles (UCLA), Los Angeles, California
       year: 2023
@@ -19,7 +25,7 @@
 - title: Research Experience
   type: time_table
   contents:
-    - title: Research Assistant
+    - title: Allman Fellow & Research Assistant
       institution: Department of Mechanical Engineering, UW-Madison, Madison, Wisconsin
       year: |+
         09/2023
