@@ -19,11 +19,7 @@ Closure models are widely used in simulating complex multiscale dynamical system
 
 <div class="row mt-3">
     <div class="col-12 mt-3 mt-md-0">
-        <!-- Video tag for responsive video playback -->
-        <video playsinline autoplay loop muted id="myVideo" class="img-fluid rounded z-depth-1">
-            <source src="assets/video/Animation3050WithAndWithoutG.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        {% include video.liquid path="assets/video/Animation3050WithAndWithoutG.mp4" class="img-fluid rounded z-depth-1" autoplay=true loop=true muted=true playsinline=true %}
         <div class="caption">
             Animations of the true vorticity field, and the simulation vorticity with and without G from 30s to 50s. <br>
         </div>
