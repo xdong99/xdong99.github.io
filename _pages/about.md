@@ -1,6 +1,6 @@
 ---
-layout: about
-title: about
+layout: About
+title: About
 permalink: /
 subtitle: |+
   <strong>PhD Candidate | MSCS</strong> at <a href="https://www.wisc.edu/">the University of Wisconsin-Madison</a>. <br>
