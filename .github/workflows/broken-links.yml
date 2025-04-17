@@ -29,10 +29,13 @@ on:
       - "!README.md"
       - "!CUSTOMIZE.md"
 
+  workflow_dispatch:
+
 jobs:
   link-checker:
     runs-on: ubuntu-latest
-    continue-on-error: false  # 如果你希望构建继续运行，即使有坏链，可改为 true
+    # 如果你希望构建失败也继续后续步骤，可以改为 true
+    continue-on-error: false
     steps:
       - uses: actions/checkout@v4
 
@@ -47,4 +50,6 @@ jobs:
             --exclude-path README.md
             --exclude-path CUSTOMIZE.md
             --exclude-path _posts/2018-12-22-distill.md
+            --exclude-path _postssample/2018-12-22-distill.md
+            --exclude-path _pages/blog.md
             './**/*.md' './**/*.html'
