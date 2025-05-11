@@ -286,8 +286,8 @@ display_categories: ["Generative-Models"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Dong]
-  first_name: [Xinghao]
+  last_name: Dong
+  first_name: Xinghao
 
   style: apa
   locale: en

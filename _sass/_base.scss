@@ -656,6 +656,7 @@ footer.sticky-bottom {
 
 // Publications
 
+
 .publications {
   margin-top: 2rem;
 
@@ -1129,3 +1130,30 @@ swiper-container {
   --swiper-pagination-color: var(--global-theme-color);
   --swiper-pagination-bullet-inactive-color: var(--global-text-color);
 }
+
+.btn-theme {
+  color: var(--global-theme-color);
+  border: 1px solid var(--global-theme-color);
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-theme:hover {
+  background-color: var(--global-theme-color);
+  color: white;
+}
+
+// body::before {
+//   content: "";
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: -1;
+//   width: 100vw;
+//   height: 100vh;
+//   background-image: url("/assets/img/lorenzAttractor.png");
+//   background-size: cover;
+//   background-position: center;
+//   filter: blur(2px) brightness(0.4); // 模糊 + 降低亮度
+//   opacity: 0.6;
+// }

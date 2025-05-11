@@ -1,7 +1,30 @@
 ---
 ---
+@article{dong2025efficient,
+  author = {Dong, Xinghao and Yang, Huchen and Wu, Jin-Long},
+  journal = {arXiv preprint arXiv:xxxx.xxxxx, submitted to CMAME},
+  title = {Efficient Stochastic Closure Modeling for Complex Dynamical Systems via Latent Score-based Generative Models},
+  year = {2025},
+  bibtex_show={true},
+  selected={true},
+  abbr={arXiv},
+  abstract={We propose a latent diffusion–based framework for stochastic, nonlocal closure modeling in systems governed by partial differential equations. This work aims to address a key challenge of modeling complex multiscale dynamical systems without a clear scale separation, for which numerically resolving all scales is prohibitively expensive, e.g., for engineering turbulent flows or cloud dynamics. While classical closure modeling methods leverage domain knowledge to approximate subgrid-scale phenomena, their deterministic and local assumptions can be too restrictive in regimes lacking a clear scale separation. Recent developments of diffusion-based stochastic models have shown promise in the context of closure modeling, but their prohibitive computational inference cost limits practical applications for many real-world applications. This work addresses this limitation by jointly training convolutional autoencoders with conditional diffusion models in the latent spaces, significantly reducing the dimensionality of the sampling process while preserving essential physical characteristics. Numerical results demonstrate that the joint training approach helps discover a proper latent space that not only guarantees small reconstruction errors but also ensures good performance of the diffusion model in the latent space. When integrated into numerical simulations, the proposed stochastic modeling framework via latent conditional diffusion models achieves significant computational acceleration while maintaining comparable predictive accuracy to standard diffusion models in physical spaces.}
+}
+
+@article{yang2025bayesian,
+  title={Bayesian Experimental Design for Model Discrepancy Calibration: An Auto-Differentiable Ensemble Kalman Inversion Approach},
+  author={Yang, Huchen and Dong, Xinghao and Wu, Jin-Long},
+  journal={arXiv preprint arXiv:2504.20319, submitted to JCP},
+  abbr={arXiv},
+  pdf ={https://arxiv.org/abs/2504.20319},
+  bibtex_show={true},
+  year={2025},
+  selected={true},
+  abstract={Bayesian experimental design (BED) offers a principled framework for optimizing data acquisition by leveraging probabilistic inference. However, practical implementations of BED are often compromised by model discrepancy, i.e., the mismatch between predictive models and true physical systems, which can potentially lead to biased parameter estimates. While data-driven approaches have been recently explored to characterize the model discrepancy, the resulting high-dimensional parameter space poses severe challenges for both Bayesian updating and design optimization. In this work, we propose a hybrid BED framework enabled by auto-differentiable ensemble Kalman inversion (AD-EKI) that addresses these challenges by providing a computationally efficient, gradient-free alternative to estimate the information gain for high-dimensional network parameters. The AD-EKI allows a differentiable evaluation of the utility function in BED and thus facilitates the use of standard gradient-based methods for design optimization. In the proposed hybrid framework, we iteratively optimize experimental designs, decoupling the inference of low-dimensional physical parameters handled by standard BED methods, from the high-dimensional model discrepancy handled by AD-EKI. The identified optimal designs for the model discrepancy enable us to systematically collect informative data for its calibration. The performance of the proposed method is studied by a classical convection-diffusion BED example, and the hybrid framework enabled by AD-EKI efficiently identifies informative data to calibrate the model discrepancy and robustly infers the unknown physical parameters in the modeled system. Besides addressing the challenges of BED with model discrepancy, AD-EKI also potentially fosters efficient and scalable frameworks in many other areas with bilevel optimization, such as meta-learning and structure optimization.},
+}
+
 @article{dong2025data,
-  title={Data-driven stochastic closure modeling via conditional diffusion model and neural operator},
+  title={Data-driven Stochastic Closure Modeling via Conditional Diffusion Model and Neural Operator},
   author={Dong, Xinghao and Chen, Chuanqi and Wu, Jin-Long},
   journal={Journal of Computational Physics},
   pages={114005},
@@ -16,6 +39,7 @@
 
 @article{dong2022some,
   title={Some Numerical Simulations in Favor of the Morrey’s Conjecture},
+  journal={arXiv preprint arXiv:2211.11194},
   author={Dong, Xinghao and Enakoutsa, Koffi},
   year={2022},
   bibtex_show={true},
