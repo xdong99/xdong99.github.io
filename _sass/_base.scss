@@ -705,9 +705,8 @@ footer.sticky-bottom {
       margin-bottom: 1rem;
 
       .preview {
-        width: 100%;
-        min-width: 80px;
-        max-width: 200px;
+        // width: 140px !important;
+        // border-radius: 6px;
       }
 
       .abbr {
@@ -1109,6 +1108,8 @@ nav[data-toggle="toc"] {
 .medium-zoom-overlay,
 .medium-zoom-image--opened {
   z-index: 999;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 #toc-sidebar {
@@ -1142,6 +1143,22 @@ swiper-container {
   background-color: var(--global-theme-color);
   color: white;
 }
+
+.badge {
+  background-color: var(--global-theme-color);
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.25em 0.6em;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.award.badge {
+  background-color: #e83e8c;
+}
+
 
 // body::before {
 //   content: "";
