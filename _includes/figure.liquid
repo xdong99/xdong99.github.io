@@ -8,74 +8,35 @@
   {% endif %}
 >
   <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    {% if site.imagemagick.enabled %}
+    <!-- WebP 优先，多尺寸自适应 -->
+    {% if site.imagemagick.enabled and (ext == 'gif' or ext == 'jpeg' or ext == 'jpg' or ext == 'png' or ext == 'tiff') %}
       <source
-        class="responsive-img-srcset"
-        {% if ext == 'gif' or ext == 'jpeg' or ext == 'jpg' or ext == 'png' or ext == 'tiff' %}
-          {% assign max_width = site.imagemagick.widths | sort | last %}
-          srcset="{{ img_path | relative_url }}-{{ max_width }}.webp"
-          type="image/webp"
-        {% else %}
-          srcset="{{ include.path | relative_url }}"
-        {% endif %}
-        {% if include.sizes %}
-          sizes="{{ include.sizes }}"
-        {% else %}
-          sizes="95vw"
-        {% endif %}
-      >
+        type="image/webp"
+        srcset="
+          {{ img_path | relative_url }}-480.webp 480w,
+          {{ img_path | relative_url }}-800.webp 800w,
+          {{ img_path | relative_url }}-1400.webp 1400w"
+        sizes="{% if include.sizes %}{{ include.sizes }}{% else %}95vw{% endif %}">
     {% endif %}
+
+    <!-- Fallback: 原始图像 -->
     <img
       src="{% if include.url %}{{ include.url }}{% elsif include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}"
-      {% if include.class %}
-        class="{{ include.class }}"
-      {% endif %}
-      {% if include.width %}
-        width="{{ include.width }}"
-      {% else %}
-        width="100%"
-      {% endif %}
-      {% if include.height %}
-        height="{{ include.height }}"
-      {% else %}
-        height="auto"
-      {% endif %}
+      {% if include.class %}class="{{ include.class }}"{% endif %}
+      {% if include.width %}width="{{ include.width }}"{% else %}width="100%"{% endif %}
+      {% if include.height %}height="{{ include.height }}"{% else %}height="auto"{% endif %}
       {% if include['min-width'] or include['min-height'] or include['max-width'] or include['max-height'] %}
         style="
-          {% if include['min-width'] %}
-            min-width: {{ include.min-width }};
-          {% endif %}
-          {% if include['min-height'] %}
-            min-height: {{ include.min-height }};
-          {% endif %}
-          {% if include['max-width'] %}
-            max-width: {{ include.max-width }};
-          {% endif %}
-          {% if include['max-height'] %}
-            max-height: {{ include.max-height }};
-          {% endif %}
+          {% if include['min-width'] %}min-width: {{ include.min-width }};{% endif %}
+          {% if include['min-height'] %}min-height: {{ include.min-height }};{% endif %}
+          {% if include['max-width'] %}max-width: {{ include.max-width }};{% endif %}
+          {% if include['max-height'] %}max-height: {{ include.max-height }};{% endif %}
         "
       {% endif %}
-      {% if include.alt %}
-        alt="{{ include.alt }}"
-      {% endif %}
-      {% if include.title %}
-        title="{{ include.title }}"
-      {% endif %}
-      {% if include.zoomable %}
-        data-zoomable
-      {% endif %}
-      {% if include.loading %}
-        loading="{{ include.loading }}"
-      {% elsif site.lazy_loading_images %}
-        loading="lazy"
-      {% endif %}
-      onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
+      {% if include.alt %}alt="{{ include.alt }}"{% endif %}
+      {% if include.title %}title="{{ include.title }}"{% endif %}
+      {% if include.zoomable %}data-zoomable{% endif %}
+      {% if include.loading %}loading="{{ include.loading }}"{% elsif site.lazy_loading_images %}loading="lazy"{% endif %}
     >
   </picture>
 
