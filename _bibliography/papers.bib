@@ -1,13 +1,25 @@
 ---
 ---
-@article{dong2025efficient,
-  author = {Dong, Xinghao and Yang, Huchen and Wu, Jin-Long},
+@article{dong2025synergizing,
+  author = {Dong, Xinghao and Wu, Jin-Long},
   journal = {arXiv preprint arXiv:xxxx.xxxxx},
-  title = {Stochastic and Non-local Closure Modeling for Nonlinear Dynamical Systems via Latent Score-based Generative Models},
+  title = {Synergizing Transport-Based Generative Models and Latent Geometry for Stochastic Closure Modeling},
   year = {2025},
   bibtex_show={true},
   selected={true},
   note={<b>Under review in CMAME</b>},
+  abbr={arXiv},
+  abstract={We introduce a latent generative model framework for stochastic closure modeling that is efficient, accurate, and uncertainty-aware. By systematically comparing modern transport-based generative models—including diffusion, flow matching, and stochastic interpolants—we show that flow matching is exceptionally suited for this task, enabling single-step sampling that is up to two orders of magnitude faster than iterative diffusion-based approaches. To ensure the physical fidelity of the closure, we investigate and address the critical issue of latent space distortion, which can severely degrade model performance. We compare the implicit regularization offered by a joint training scheme against two explicit data structural regularizers: metric-preserving (MP) and geometry-aware (GA) constraints. In numeircal experiments of 2D turbulent flows, we find that all three strategies produce well-structured latent representations and yield more accurate long-term predictions than unregularized baseline methods. This work's synthesis of optimal transport samplers and geometrically structured latent spaces marks a significant advance for predictive simulation in complex physical systems.}
+}
+
+@article{dong2025efficient,
+  author = {Dong, Xinghao and Yang, Huchen and Wu, Jin-Long},
+  journal = {arXiv preprint arXiv:2506.20771},
+  title = {Stochastic and Non-local Closure Modeling for Nonlinear Dynamical Systems via Latent Score-based Generative Models},
+  year = {2025},
+  bibtex_show={true},
+  selected={true},
+  note={<b>Under review in JCP</b>},
   abbr={arXiv},
   preview={LDM_Schematic.png},
   abstract={We propose a latent score–based generative AI framework for learning stochastic, non-local closure models and constitutive laws in nonlinear dynamical systems of computational mechanics. This work addresses a key challenge of modeling complex multiscale dynamical systems without a clear scale separation, for which numerically resolving all scales is prohibitively expensive, e.g., for engineering turbulent flows. While classical closure modeling methods leverage domain knowledge to approximate subgrid-scale phenomena, their deterministic and local assumptions can be too restrictive in regimes lacking a clear scale separation. Recent developments of diffusion-based stochastic models have shown promise in the context of closure modeling, but their prohibitive computational inference cost limits practical applications for many real-world applications. This work addresses this limitation by jointly training convolutional autoencoders with conditional diffusion models in the latent spaces, significantly reducing the dimensionality of the sampling process while preserving essential physical characteristics. Numerical results demonstrate that the joint training approach helps discover a proper latent space that not only guarantees small reconstruction errors but also ensures good performance of the diffusion model in the latent space. When integrated into numerical simulations, the proposed stochastic modeling framework via latent conditional diffusion models achieves significant computational acceleration while maintaining comparable predictive accuracy to standard diffusion models in physical spaces.}
