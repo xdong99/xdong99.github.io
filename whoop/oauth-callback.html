@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WHOOP OAuth Callback</title>
+  <meta name="robots" content="noindex">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f4;
+      --text: #1f2933;
+      --muted: #52606d;
+      --panel: #ffffff;
+      --border: #d9e2ec;
+      --accent: #006d77;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101418;
+        --text: #e6edf3;
+        --muted: #a8b3bd;
+        --panel: #161b22;
+        --border: #30363d;
+        --accent: #58c4c7;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    section {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: clamp(24px, 5vw, 48px);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    p { color: var(--muted); }
+
+    label {
+      display: block;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    code, textarea {
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 120px;
+      resize: vertical;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      background: transparent;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+
+    button {
+      margin-top: 12px;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: var(--accent);
+      color: #ffffff;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <h1>WHOOP OAuth Callback</h1>
+      <p>If WHOOP redirected you here after authorization, copy the values below for the token exchange step.</p>
+
+      <label for="code">Authorization code</label>
+      <textarea id="code" readonly></textarea>
+      <button type="button" data-copy="code">Copy code</button>
+
+      <label for="details">Full callback URL</label>
+      <textarea id="details" readonly></textarea>
+      <button type="button" data-copy="details">Copy URL</button>
+    </section>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code") || params.get("error") || "No code or error parameter was found in the URL.";
+    document.getElementById("code").value = code;
+    document.getElementById("details").value = window.location.href;
+
+    document.querySelectorAll("button[data-copy]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const target = document.getElementById(button.dataset.copy);
+        await navigator.clipboard.writeText(target.value);
+        button.textContent = "Copied";
+        window.setTimeout(() => { button.textContent = button.dataset.copy === "code" ? "Copy code" : "Copy URL"; }, 1200);
+      });
+    });
+  </script>
+</body>
+</html>
