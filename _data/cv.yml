@@ -1,86 +1,112 @@
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D. Candidate in Mechanical Engineering & Mathematics
-      institution: University of Wisconsin-Madison, Madison, Wisconsin
-      year: |+
-        Expected 
-        <div style="margin-top: 8px;"></div>
-        2028
+    - title: Ph.D. Candidate in Mechanical Engineering
+      institution: University of Wisconsin–Madison, Madison, WI
+      year: Expected<br>Jun. 2028
       description:
-        - Advised by <a href="https://directory.engr.wisc.edu/me/Faculty/Wu_Jinlong/">Dr. Jinlong Wu</a>.
-        - <a href="https://www.jinlongwu.org/">Artificial Intelligence for Modeling and Simulation (AIMS) Lab </a>.
+        - Minor in Mathematics.
+        - Advised by <a href="https://directory.engr.wisc.edu/me/Faculty/Wu_Jinlong/">Jin-Long Wu</a> in the <a href="https://www.jinlongwu.org/">Artificial Intelligence for Modeling and Simulation (AIMS) Lab</a>.
     - title: M.S. in Computer Science
-      institution: University of Wisconsin-Madison, Madison, Wisconsin
-      year: |+
-        Expected 
-        <div style="margin-top: 8px;"></div>
-        2026
+      institution: University of Wisconsin–Madison, Madison, WI
+      year: Expected<br>Jun. 2027
     - title: B.S. in Applied Mathematics with Specialization in Computing
-      institution: University of California, Los Angeles (UCLA), Los Angeles, California
-      year: 2023
+      institution: University of California, Los Angeles (UCLA), Los Angeles, CA
+      year: Mar. 2023
       description:
-        - <em> Cum laude.</em>
+        - <em>Cum laude</em>. GPA 3.90/4.00.
 
 - title: Research Experience
   type: time_table
   contents:
-    - title: Allman Fellow & Research Assistant
-      institution: Department of Mechanical Engineering, UW-Madison, Madison, Wisconsin
-      year: |+
-        09/2023
-        <div style="margin-top: 8px;"></div> 
-        - Present
-      description:
-        - Refining diffusion models to accurately model and predict complex stochastic systems, emphasizing their mathematical underpinnings.
     - title: Research Assistant
-      institution: Department of Mathematics, UCLA, Los Angeles, California
-      year: |+
-        06/2022
-        <div style="margin-top: 8px;"></div> 
-        - 03/2023
+      institution: Department of Mechanical Engineering, University of Wisconsin–Madison
+      year: Sep. 2023<br>– Present
+      maindescription: <a href="https://www.jinlongwu.org/">Artificial Intelligence for Modeling and Simulation (AIMS) Lab</a>
       description:
-        - Investigated an optimization problem related to the Morrey conjecture that rank-one convexity does not imply quasi-convexity.
-        - First successful numerical strategy to prove the Morrey Conjecture by finding example functions.
+        - >-
+          <strong>Indirect stochastic learning.</strong> Learned stochastic closures from temporally sparse
+          resolved-state trajectories using a trajectory energy score. Implemented randomized discrete-adjoint
+          gradients through diffusion sampling and PDE integration.
+        - >-
+          <strong>Online data assimilation.</strong> Developed posterior-score closure conditioning for non-Gaussian
+          model-form uncertainty and combined it with a state ensemble Kalman filter through progressive correction.
+        - >-
+          <strong>Generative dynamics modeling.</strong> Coupled conditional diffusion models and Fourier neural
+          operators with PDE solvers to recover flow statistics and generate closures across resolutions in
+          two-dimensional Navier–Stokes systems.
+        - >-
+          <strong>Joint representation learning.</strong> Jointly trained autoencoders and conditional score models
+          with anti-collapse regularization to study how latent representations affect generation and prediction
+          in coupled simulations.
+        - >-
+          <strong>Geometry-aware generative modeling.</strong> Designed metric-preserving and geometry-aware
+          latent representations and studied how their geometry affects diffusion, flow matching, and stochastic
+          interpolants for closure modeling.
+    - title: Research Assistant
+      institution: Department of Mathematics, UCLA
+      year: Jun. 2022<br>– Mar. 2023
+      description:
+        - Studied Dacorogna example functions numerically to investigate Morrey’s conjecture.
+    - title: Research Assistant
+      institution: Department of Ecology and Evolutionary Biology, UCLA
+      year: Feb. 2022<br>– Jun. 2022
+      description:
+        - Built mechanistic simulation and boosted regression tree models to predict tick abundance.
 
-    - title: Research Assistant
-      institution: Department of Ecology and Evolutionary Biology, UCLA, Los Angeles, California
-      year: |+
-        02/2022
-        <div style="margin-top: 8px;"></div> 
-        - 06/2022
-      description:
-        - Constructed a mechanistic simulation-based model and a boosted regression tree model to predict tick population abundance.
+- title: Publications
+  type: list
+  contents:
+    - <a href="/publications/">Journal articles and preprints</a>
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2023
-      items:
-        - UW-Madison Allman Fellowship
+    - title: Allman Fellowship
+      institution: University of Wisconsin–Madison
+      year: 2023
 
-- title: Teaching
+- title: Selected Presentations
   type: time_table
   contents:
-    - title: Grader
-      institution: >
-        PIC-20A: Principles of Java Language with Applications, UCLA
-      year: Winter 2022
-      
+    - title: SIAM UQ and SIAM MDS
+      year: 2026
+      description:
+        - Oral presentations.
+    - title: APS Division of Fluid Dynamics Annual Meeting
+      year: 2024–2026
+      description:
+        - DFD-Interact presentations.
+    - title: American Geophysical Union Annual Meeting
+      year: 2024
+      description:
+        - Poster presentation.
+
+- title: Teaching Experience
+  type: time_table
+  contents:
+    - title: Teaching Assistant
+      institution: University of Wisconsin–Madison
+      year: Fall 2026
+      description:
+        - "ME 737: Scientific Computing and Machine Learning for Engineering Applications."
     - title: Learning Assistant
-      institution: >
-        CS 31: Introduction to Computer Science I, UCLA
+      institution: UCLA
       year: Spring 2022
-
-    - title: Learning Assistant
-      institution: >
-        Math 32B: Calculus of Several Variables, UCLA
+      description:
+        - "CS 31: Introduction to Computer Science I."
+    - title: Grader
+      institution: UCLA
       year: Winter 2022
+      description:
+        - "PIC-20A: Principles of Java Language with Applications."
+    - title: Learning Assistant
+      institution: UCLA
+      year: Winter 2022
+      description:
+        - "Math 32B: Calculus of Several Variables."
 
-# - title: Professional Services
-#   type: list
-#   contents:    
-#     - <strong>Organizer:</strong> <a href="https://score-based-methods-workshop.github.io/">NeurIPS 2022 Workshop on Score-Based Methods</a>.
-#     - <strong>Area Chair:</strong> CVPR (2023), NeurIPS (2023).
-#     - <strong>Journal Reviewer:</strong> JRSS-B, JMLR, TMLR, IEEE TPAMI, ACM TKDD, Medical Image Analysis, IEEE TIFS, IEEE TNNLS, IEEE TDSC, IET CV.
-#     - <strong>Conference Reviewer/ Program Committee:</strong> NeurIPS (2019-2022, 2016), ICML (2019-2023), ICLR (2019-2023), AISTATS (2020-2022), UAI (2020-2023), AAAI (2020).
+- title: Programming
+  type: list
+  contents:
+    - Python, PyTorch, C++, MATLAB
