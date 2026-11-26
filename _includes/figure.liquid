@@ -1,6 +1,13 @@
 {% assign img_path = include.path | remove: '.jpg' | remove: '.jpeg' | remove: '.png' | remove: '.tiff' | remove: '.gif' %}
 {% assign parts = include.path | split: '.' %}
 {% assign ext = parts.last %}
+{% if include.url %}
+  {% assign figure_src = include.url %}
+{% elsif include.cache_bust %}
+  {% assign figure_src = include.path | relative_url | bust_file_cache %}
+{% else %}
+  {% assign figure_src = include.path | relative_url %}
+{% endif %}
 
 <figure
   {% if include.slot %}
@@ -21,7 +28,7 @@
 
     <!-- Fallback: 原始图像 -->
     <img
-      src="{% if include.url %}{{ include.url }}{% elsif include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}"
+      src="{{ figure_src }}"
       {% if include.class %}class="{{ include.class }}"{% endif %}
       {% if include.width %}width="{{ include.width }}"{% else %}width="100%"{% endif %}
       {% if include.height %}height="{{ include.height }}"{% else %}height="auto"{% endif %}
@@ -35,7 +42,7 @@
       {% endif %}
       {% if include.alt %}alt="{{ include.alt }}"{% endif %}
       {% if include.title %}title="{{ include.title }}"{% endif %}
-      {% if include.zoomable %}data-zoomable{% endif %}
+      {% if include.zoomable %}data-zoomable data-zoom-src="{{ figure_src }}"{% endif %}
       {% if include.loading %}loading="{{ include.loading }}"{% elsif site.lazy_loading_images %}loading="lazy"{% endif %}
     >
   </picture>

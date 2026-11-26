@@ -710,8 +710,11 @@ footer.sticky-bottom {
       }
 
       .abbr {
-        height: 2rem;
         margin-bottom: 0.5rem;
+
+        @media (max-width: 575.98px) {
+          max-width: 200px;
+        }
 
         abbr {
           display: inline-block;
@@ -1107,7 +1110,7 @@ nav[data-toggle="toc"] {
 
 .medium-zoom-overlay,
 .medium-zoom-image--opened {
-  z-index: 999;
+  z-index: 1050;
   border-radius: 0 !important;
   box-shadow: none !important;
 }
