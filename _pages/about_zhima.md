@@ -4,9 +4,9 @@ Adopted at 3 months old, I’m now the *Pawfessor of Appawlied Meowthemeowtics a
 
 <div class="row">
     <div class="col-sm mt-6 mt-md-0">
-        {% include figure.liquid path="assets/img/zhima2.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/zhima2.jpg" class="img-fluid rounded z-depth-1" alt="Sesame（芝麻）" webp=false %}
     </div>
     <div class="col-sm mt-6 mt-md-0">
-        {% include figure.liquid path="assets/img/zhima3.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/zhima3.jpg" class="img-fluid rounded z-depth-1" alt="Sesame（芝麻）" webp=false %}
     </div>
 </div>
