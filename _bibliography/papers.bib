@@ -9,7 +9,8 @@
   selected={true},
   pdf={https://arxiv.org/pdf/2611.19676},
   note={<b>Under review at CMAME</b>},
-  abbr={arXiv}
+  abbr={arXiv},
+  preview={indirect_learning_schematic.png}
 }
 
 @article{dong2025synergizing,
@@ -54,7 +55,7 @@
   volume={545},
   eid={114469},
   doi={10.1016/j.jcp.2025.114469},
-  selected={true},
+  selected={false},
   preview={OED.png},
   abstract={Bayesian experimental design (BED) offers a principled framework for optimizing data acquisition by leveraging probabilistic inference. However, practical implementations of BED are often compromised by model discrepancy, i.e., the mismatch between predictive models and true physical systems, which can potentially lead to biased parameter estimates. While data-driven approaches have been recently explored to characterize the model discrepancy, the resulting high-dimensional parameter space poses severe challenges for both Bayesian updating and design optimization. In this work, we propose a hybrid BED framework enabled by auto-differentiable ensemble Kalman inversion (AD-EKI) that addresses these challenges by providing a computationally efficient, gradient-free alternative to estimate the information gain for high-dimensional network parameters. The AD-EKI allows a differentiable evaluation of the utility function in BED and thus facilitates the use of standard gradient-based methods for design optimization. In the proposed hybrid framework, we iteratively optimize experimental designs, decoupling the inference of low-dimensional physical parameters handled by standard BED methods, from the high-dimensional model discrepancy handled by AD-EKI. The identified optimal designs for the model discrepancy enable us to systematically collect informative data for its calibration. The performance of the proposed method is studied by a classical convection-diffusion BED example, and the hybrid framework enabled by AD-EKI efficiently identifies informative data to calibrate the model discrepancy and robustly infers the unknown physical parameters in the modeled system. Besides addressing the challenges of BED with model discrepancy, AD-EKI also potentially fosters efficient and scalable frameworks in many other areas with bilevel optimization, such as meta-learning and structure optimization.},
 }
