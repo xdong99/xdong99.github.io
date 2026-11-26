@@ -10,7 +10,8 @@ layout: page
           <div class="profile col-sm-8 col-md-8">
 
               {% if profile.image %}
-                {% include figure.liquid path="assets/img/zhima.gif" class="img-fluid rounded z-depth-1" %}
+                {% assign profile_image = profile.image | prepend: '/assets/img/' %}
+                {% include figure.liquid path=profile_image class="img-fluid rounded z-depth-1" alt=profile.image_alt webp=false %}
               {% endif %}
 
           </div>

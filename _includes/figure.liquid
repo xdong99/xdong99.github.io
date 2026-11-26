@@ -1,6 +1,7 @@
 {% assign img_path = include.path | remove: '.jpg' | remove: '.jpeg' | remove: '.png' | remove: '.tiff' | remove: '.gif' %}
 {% assign parts = include.path | split: '.' %}
 {% assign ext = parts.last %}
+{% assign webp_source_formats = 'gif,jpeg,jpg,png,tiff' | split: ',' %}
 {% if include.url %}
   {% assign figure_src = include.url %}
 {% elsif include.cache_bust %}
@@ -16,7 +17,7 @@
 >
   <picture>
     <!-- WebP 优先，多尺寸自适应 -->
-    {% if site.imagemagick.enabled and (ext == 'gif' or ext == 'jpeg' or ext == 'jpg' or ext == 'png' or ext == 'tiff') %}
+    {% if site.imagemagick.enabled and include.webp != false and webp_source_formats contains ext %}
       <source
         type="image/webp"
         srcset="

@@ -6,7 +6,6 @@
       year: Expected<br>Jun. 2028
       description:
         - Minor in Mathematics.
-        - Advised by <a href="https://directory.engr.wisc.edu/me/Faculty/Wu_Jinlong/">Jin-Long Wu</a> in the <a href="https://www.jinlongwu.org/">Artificial Intelligence for Modeling and Simulation (AIMS) Lab</a>.
     - title: M.S. in Computer Science
       institution: University of Wisconsin–Madison, Madison, WI
       year: Expected<br>Jun. 2027
@@ -14,7 +13,7 @@
       institution: University of California, Los Angeles (UCLA), Los Angeles, CA
       year: Mar. 2023
       description:
-        - <em>Cum laude</em>. GPA 3.90/4.00.
+        - <em>Cum laude</em>.
 
 - title: Research Experience
   type: time_table
@@ -22,37 +21,12 @@
     - title: Research Assistant
       institution: Department of Mechanical Engineering, University of Wisconsin–Madison
       year: Sep. 2023<br>– Present
-      maindescription: <a href="https://www.jinlongwu.org/">Artificial Intelligence for Modeling and Simulation (AIMS) Lab</a>
-      description:
-        - >-
-          <strong>Indirect stochastic learning.</strong> Learned stochastic closures from temporally sparse
-          resolved-state trajectories using a trajectory energy score. Implemented randomized discrete-adjoint
-          gradients through diffusion sampling and PDE integration.
-        - >-
-          <strong>Online data assimilation.</strong> Developed posterior-score closure conditioning for non-Gaussian
-          model-form uncertainty and combined it with a state ensemble Kalman filter through progressive correction.
-        - >-
-          <strong>Generative dynamics modeling.</strong> Coupled conditional diffusion models and Fourier neural
-          operators with PDE solvers to recover flow statistics and generate closures across resolutions in
-          two-dimensional Navier–Stokes systems.
-        - >-
-          <strong>Joint representation learning.</strong> Jointly trained autoencoders and conditional score models
-          with anti-collapse regularization to study how latent representations affect generation and prediction
-          in coupled simulations.
-        - >-
-          <strong>Geometry-aware generative modeling.</strong> Designed metric-preserving and geometry-aware
-          latent representations and studied how their geometry affects diffusion, flow matching, and stochastic
-          interpolants for closure modeling.
     - title: Research Assistant
       institution: Department of Mathematics, UCLA
       year: Jun. 2022<br>– Mar. 2023
-      description:
-        - Studied Dacorogna example functions numerically to investigate Morrey’s conjecture.
     - title: Research Assistant
       institution: Department of Ecology and Evolutionary Biology, UCLA
       year: Feb. 2022<br>– Jun. 2022
-      description:
-        - Built mechanistic simulation and boosted regression tree models to predict tick abundance.
 
 - title: Publications
   type: list
